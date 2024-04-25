@@ -1,8 +1,7 @@
 <html>
 <script src="https://player.vimeo.com/api/player.js"></script>
-<body>
+<body style="padding: 43.96% 0 0 0; position: relative">
     
-
 <script>
     
     function getParameterByName(name, url = window.location.href) {
@@ -22,9 +21,11 @@
     iframe.style.left = 0;
     iframe.style.width = '100%';
     iframe.style.height = '100%';
+    iframe.frameborder=0;
+    iframe.allow="autoplay; fullscreen; picture-in-picture;"
     iframe.src = `https://player.vimeo.com/video/${videoId}`
     document.body.appendChild(iframe);
-
+    
 </script>
 </body>
 
